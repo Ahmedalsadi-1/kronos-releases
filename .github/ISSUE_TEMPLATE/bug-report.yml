@@ -1,0 +1,34 @@
+name: Report a KronOS problem
+description: Share reproducible steps and an optional local support report.
+title: "[Bug] "
+body:
+    - type: markdown
+      attributes:
+          value: "This issue is public. Do not include keys, private conversations, or client data."
+    - type: textarea
+      id: behavior
+      attributes:
+          label: What happened?
+          description: Include what you expected to happen.
+      validations:
+          required: true
+    - type: textarea
+      id: steps
+      attributes:
+          label: Steps to reproduce
+          placeholder: "1. Open KronOS..."
+      validations:
+          required: true
+    - type: input
+      id: version
+      attributes:
+          label: KronOS version and architecture
+          placeholder: "0.14.3, macOS arm64"
+      validations:
+          required: true
+    - type: textarea
+      id: diagnostics
+      attributes:
+          label: Support report (optional)
+          description: "Settings > About > Diagnostics & support. Preview the report before pasting."
+          render: json
