@@ -7,10 +7,13 @@ application source is maintained separately in a private repository.
 
 ## Downloads
 
-Open [Releases](https://github.com/Ahmedalsadi-1/kronos-releases/releases) for
-published installers. Each release lists its supported architecture, signing
-status, installation instructions, and known issues. If no release is listed,
-there is no published installer yet.
+**[Download KronOS 0.14.3 public preview](https://github.com/Ahmedalsadi-1/kronos-releases/releases/tag/v0.14.3)**
+for Apple silicon Macs running macOS 12 or later. DMG, ZIP, and SHA-256 checksums
+are available. This preview is ad-hoc signed and is not Apple-notarized; macOS may
+block it or require explicit user approval. Read the release notes before installing.
+
+Open [Releases](https://github.com/Ahmedalsadi-1/kronos-releases/releases) for all
+published installers and known issues. Automatic upgrades are not yet verified.
 
 macOS is the initial distribution target. Windows and Linux remain under
 evaluation. The iPhone client is Labs work.
