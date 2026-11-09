@@ -7,6 +7,8 @@ application source is maintained separately in a private repository.
 
 ## Downloads
 
+Visit the [KronOS website](https://ahmedalsadi-1.github.io/kronos-releases/) for the product guide, downloads, and documentation.
+
 **[Download KronOS 0.14.3 public preview](https://github.com/Ahmedalsadi-1/kronos-releases/releases/tag/v0.14.3)**
 for Apple silicon Macs running macOS 12 or later. DMG, ZIP, and SHA-256 checksums
 are available. This preview is ad-hoc signed and is not Apple-notarized; macOS may
