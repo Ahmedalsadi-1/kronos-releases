@@ -3,22 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#060708" />
-    <link rel="icon" type="image/png" href="/kronos-releases/assets/product/kronterm-cat-mark.png" />
-    <title>KronOS | Your workspace, models, and keys</title>
+    <meta name="theme-color" content="#faf9fe" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("kronos-theme");
+        const dark =
+          savedTheme === "dark" || (savedTheme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+        document.querySelector('meta[name="theme-color"]').content = dark ? "#161616" : "#faf9fe";
+      } catch {}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/kronos-releases/assets/kronos-logo.svg" />
+    <title>KronOS | A workspace for you and your agents</title>
     <meta
       name="description"
       content="KronOS brings terminals, browsers, files, and AI agents into one persistent desktop workspace."
     />
-    <meta property="og:title" content="KronOS | Your workspace, models, and keys" />
+    <meta property="og:title" content="KronOS | A workspace for you and your agents" />
     <meta
       property="og:description"
       content="A living command center for coding, browsing, testing, automation, and workspace-aware agent execution."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/kronos-releases/assets/product/kronterm-homepage.png" />
-    <script type="module" crossorigin src="/kronos-releases/assets/index-CwkFuc7B.js"></script>
-    <link rel="stylesheet" crossorigin href="/kronos-releases/assets/index-7wxzyjZb.css">
+    <meta property="og:url" content="https://ahmedalsadi-1.github.io/kronos-releases/" />
+    <link rel="canonical" href="https://ahmedalsadi-1.github.io/kronos-releases/" />
+    <script type="module" crossorigin src="/kronos-releases/assets/index-DdI7Y66V.js"></script>
+    <link rel="stylesheet" crossorigin href="/kronos-releases/assets/index-B7qhZ2uy.css">
   </head>
   <body>
     <div id="root"></div>
