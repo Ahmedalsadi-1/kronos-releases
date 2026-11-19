@@ -1,0 +1,24 @@
+:root {
+    --kronos-brand-compact: url("./kronos-compact-light.svg");
+    --kronos-brand-expanded: url("./kronos-expanded-light.svg");
+}
+
+:root[data-theme="dark"] {
+    --kronos-brand-compact: url("./kronos-compact-dark.svg");
+    --kronos-brand-expanded: url("./kronos-expanded-dark.svg");
+}
+
+.os-wordmark .os-brand-icon {
+    width: 76px;
+    height: 27px;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    background: var(--kronos-brand-expanded) center / contain no-repeat;
+}
+
+@media (max-width: 760px) {
+    .os-wordmark .os-brand-icon {
+        width: 27px;
+        background-image: var(--kronos-brand-compact);
+    }
+}
